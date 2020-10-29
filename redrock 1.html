@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            
+            
+        }
+        .topnav{
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color:rgb(88, 76, 192);
+            justify-content:center;
+            align-items: center;
+            flex-wrap: nowrap;
+            
+            
+
+        }
+        .topnav a{
+            display: block;
+            font-size: large;
+            color: white;
+            text-decoration: none;
+            height: 100%;
+            line-height: 60px;
+            text-align: center;
+            margin: 0 30px;
+            padding: 0 20px;
+            
+            
+        }
+        .topnav a:hover{
+            background-color:rgb(71, 59, 180);
+
+        }
+        .topnav input{
+            margin-left: 30px;
+            border-radius: 15px;
+            height: 25px;
+            width:130px ;
+            border: 0px solid black;
+            outline: none;
+            padding-right:20px ;
+        }
+        .topnav_serch{
+            position: relative;
+            height: 60px;
+            line-height: 60px;
+            
+            
+
+        }
+        .topnav_img{
+            position: absolute;
+            left: 150px;
+            top: 2px;
+            background-image: none;
+        }
+        .analyse{
+            margin-top: 150px;
+            margin-bottom: 50px;
+            margin-left: 250px;
+            font-weight:bolder;
+            color: rgb(51,42,180);
+            font-size: 110%;
+
+        }
+        .p1_analyse_content{
+            
+            
+            margin-left: 250px;
+            width: 70%;
+            height: 400px;
+            background-color:rgb(255, 255, 255);
+
+        }
+        .p1_anlyse_top{
+            display: flex;
+            padding: 20px 20px;
+            justify-content: center;
+            width: 100%;
+            
+
+            
+        }
+        .p1_anlyse_top_div{
+            
+            padding: 0 20px;
+        }
+        .p1_anlyse_top_div a{
+            text-decoration: none;
+            color: black;
+        }
+        .p1_anlyse_bottom{
+            display: flex;
+            flex-direction: row;
+        }
+        .p1_anlyse_l{
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+        
+            justify-content: space-around;
+
+        }
+        .p1_anlyse_l a{
+            display: block;
+            text-align: center;
+            padding: 20px 0;
+            font-size: large;
+            
+
+
+        }
+        .p1_anlyse_l a:hover{
+            background-color:rgb(153, 145, 248);
+            
+        }
+        .p1_anlyse_r_div{
+            padding: 20px 15px;
+
+        }
+        .p1_anlyse_r_roll{
+            width: 1.2px;
+            height: 70%;
+            background-color: rgb(71, 59, 180);
+            margin-top: 20px;
+            margin-left: 15px;
+
+        }
+
+        
+    </style>
+
+
+</head>
+<body style="min-width: 1100px;background-color: rgb(250, 251, 252);">
+    <div class="topnav">
+        <div><img src="素材/redrock.png" height="65"></div>
+        <a href="#">首页</a>
+        <a href="#">部门介绍</a>
+        <a href="#">部门产品</a>
+        <a href="#">毕业去向</a>
+        <a href="#">加入我们</a>
+        <div class="topnav_serch"><input type="text"><div class="topnav_img"><img src="素材/serch.png" width="23"></div></div>
+    </div>
+
+    <div class="analyse">产品分析</div>
+
+    <div class="p1_analyse_content">
+        <div class="p1_anlyse_top">
+            <div class="p1_anlyse_top_div"><a href="#">产品定位</a></div><div class="p1_anlyse_top_div"><a href="#">主要功能</a></div><div class="p1_anlyse_top_div"><a href="#">用户体验</a></div>
+        </div>
+        <div class="p1_anlyse_bottom">
+            <div class="p1_anlyse_l">
+                <a>重邮小帮手 ></a>
+                <a>掌上重邮 ></a>
+                <a>网址大全 ></a>
+                <a>弹幕系统 ></a>
+                <a>青春邮约 ></a>
+    
+            </div>
+            <div style="display: flex;">
+                <div class="p1_anlyse_r_div">
+                    <img src="素材/p11.png" alt="">
+                    <p style="font-weight: bold;">课表查询</p>
+                    <p style="font-size: 80%;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                    <p style="font-size: 80%;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                    <p style="font-size: 80%;">xxxxxxx=xxx</p>
+                </div>
+                <div class="p1_anlyse_r_div">
+                    <img src="素材/p12.png" alt="">
+                    <p style="font-weight: bold;">空教室查询</p>
+                    <p style="font-size: 80%;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                    </div>
+                <div class="p1_anlyse_r_div">
+                    <img src="素材/p13.png" alt="">
+                    <p style="font-weight: bold;">没课约</p>
+                    <p style="font-size: 80%;">xxxxxxxxxxxxxxxxxxx</p>
+                </div>
+                <div class="p1_anlyse_r_roll"></div>
+                
+    
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
