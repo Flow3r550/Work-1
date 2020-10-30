@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            
+            
+        }
+        .topnav{
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color:rgb(88, 76, 192);
+            justify-content:center;
+            align-items: center;
+            flex-wrap: nowrap;
+            
+            
+
+        }
+        .topnav a{
+            display: block;
+            font-size: large;
+            color: white;
+            text-decoration: none;
+            height: 100%;
+            line-height: 60px;
+            text-align: center;
+            margin: 0 30px;
+            padding: 0 20px;
+            
+            
+        }
+        .topnav a:hover{
+            background-color:rgb(71, 59, 180);
+
+        }
+        .topnav input{
+            margin-left: 30px;
+            border-radius: 15px;
+            height: 25px;
+            width:130px ;
+            border: 0px solid black;
+            outline: none;
+            padding-right:20px ;
+        }
+        .topnav_serch{
+            position: relative;
+            height: 60px;
+            line-height: 60px;
+            
+            
+
+        }
+        .topnav_img{
+            position: absolute;
+            left: 150px;
+            top: 2px;
+            background-image: none;
+        }
+
+
+
+
+
+
+
+
+
+
+        .p1_analyse{
+            margin-top: 150px;
+            margin-bottom: 50px;
+            margin-left: 250px;
+            font-weight:bolder;
+            color: rgb(51,42,180);
+            font-size: 110%;
+
+        }
+        .p1_analyse_content{
+            
+            
+            margin-left: 250px;
+            width: 70%;
+            height: 400px;
+            background-color:rgb(255, 255, 255);
+
+        }
+        .p1_anlyse_top{
+            display: flex;
+            padding: 20px 20px;
+            justify-content: center;
+            width: 100%;
+            
+
+            
+        }
+        .p1_anlyse_top_div{
+            
+            padding: 0 20px;
+        }
+        .p1_anlyse_top_div a{
+            text-decoration: none;
+            color: black;
+        }
+        .p1_anlyse_bottom{
+            display: flex;
+            flex-direction: row;
+        }
+        .p1_anlyse_l{
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+        
+            justify-content: space-around;
+
+        }
+        .p1_anlyse_l a{
+            display: block;
+            text-align: center;
+            padding: 20px 0;
+            font-size: large;
+            
+
+
+        }
+        .p1_anlyse_l a:hover{
+            background-color:rgb(153, 145, 248);
+            
+        }
+        .p1_anlyse_r_div{
+            padding: 20px 15px;
+
+        }
+
+
+
+
+
+
+        .p2_detail{
+            margin-left: 250px;
+            font-weight:bolder;
+            color: rgb(51,42,180);
+            font-size: 110%;
+            margin-top: 100px;
+        }
+        .p2_nav{
+
+            margin-left: 250px;
+            width: 70%;
+            display: flex;
+        }
+        .p2_nav_div{
+            padding-right: 40px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            height: 10%;
+            
+        }
+        .p2_nav a{
+            text-decoration:none;
+            color: black;
+            
+        }
+        .p2_content{
+            width: 60%;
+            height: 350px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 250px;
+
+        }
+        .p2_crystal{
+            position: absolute;
+            background-color: cornflowerblue;
+            opacity: 0.5;
+            
+            width: 280px;
+            height: 25px;
+            top: 175px;
+
+            text-align: center;
+            
+            font-size:small;
+            color: white
+
+        }
+        #p_font_s{
+            font-size: small;
+            color: gray;
+        }
+        .p2_content_konowmore{
+            
+            position: absolute;
+            display: table;
+            width: 110px;
+            height: 35px;
+            background-color: rgb(153, 145, 248);
+            border: 0px solid ;
+            border-radius: 5px;
+            right: 0px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            
+            
+        }
+        .p2_content_konowmore a{
+            
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            
+        }
+        .p2_content_konowmore a:hover{
+            background-color: rgb(255, 150, 83);
+            border-radius: 5px;
+            border: 1px solid ;
+            
+        }
+        .p2_content img{
+            display: block;
+            margin-bottom: 15px;
+        }
+        .p2_content div:hover{
+            box-shadow: -8px 0px 15px rgb(241, 242, 243);
+        }
+
+
+
+
+        .p3_exp{
+            margin-left: 250px;
+            font-weight:bolder;
+            color: rgb(51,42,180);
+            font-size: 110%;
+            margin-top: 100px;
+        }
+        .p3_idontknowhowtonameit{
+            margin-left: 250px;
+            margin-top: 50px;
+            width: 60%;
+            height: 400px;
+            background-color:rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .p3_idontknowhowtonameit_d-l{
+            width: 40%;
+            height: 99%;
+            margin: 5px;
+            
+            position: relative;
+
+
+        }
+        .p3_idontknowhowtonameit_d-r{
+            width: 60%;
+            height: 30.5%;
+            margin: 5px;
+            
+            position: relative;
+
+
+
+        }
+        .p3_idontknowhowtonameit_d-r_inner{
+            position: absolute;
+            top: 10px;
+            left: 150px;
+
+
+        }
+
+        .p3_lable-up{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: 30px;
+            background-color: rgb(255, 166, 88);
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+        }
+        .p3_lable-down{
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            width: 80px;
+            height: 20px;
+            background-color:rgb(255, 184, 121);
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            font-style: italic;
+            
+
+        }
+
+
+
+        .bottom{
+            max-width: 1500px;
+            background-image: url(素材/bottom.png);
+            background-color:rgb(79, 64, 190);
+            height: 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: white;
+            font-size: small;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            
+        }
+        .bottom div{
+            width: 400px;
+            height: 20px;
+            margin-top: 130px;
+        }
+
+        
+    </style>
+
+
+</head>
+<body style="min-width: 1700px;background-color: rgb(250, 251, 252);">
+    
+    <div class="topnav">
+        <div><img src="素材/redrock.png" height="65"></div>
+        <a href="#">首页</a>
+        <a href="#">部门介绍</a>
+        <a href="#">部门产品</a>
+        <a href="#">毕业去向</a>
+        <a href="#">加入我们</a>
+        <div class="topnav_serch"><input type="text"><div class="topnav_img"><img src="素材/serch.png" width="23"></div></div>
+    </div>
+
+
+
+
+
+    <div class="p1_analyse">产品分析</div>
+
+    <div class="p1_analyse_content">
+        <div class="p1_anlyse_top">
+            <div class="p1_anlyse_top_div"><a href="#">产品定位</a></div><div class="p1_anlyse_top_div"><a href="#">主要功能</a></div><div class="p1_anlyse_top_div"><a href="#">用户体验</a></div>
+        </div>
+        <div class="p1_anlyse_bottom">
+            <div class="p1_anlyse_l">
+                <a>重邮小帮手 ></a>
+                <a>掌上重邮 ></a>
+                <a>网址大全 ></a>
+                <a>弹幕系统 ></a>
+                <a>青春邮约 ></a>
+    
+            </div>
+            <div style="display: flex;">
+                <div class="p1_anlyse_r_div">
+                    <img src="素材/p11.png" alt="">
+                    <p style="font-weight: bold;">课表查询</p>
+                    <p style="font-size: 80%;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                    <p style="font-size: 80%;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                    <p style="font-size: 80%;">xxxxxxx=xxx</p>
+                </div>
+                <div class="p1_anlyse_r_div">
+                    <img src="素材/p12.png" alt="">
+                    <p style="font-weight: bold;">空教室查询</p>
+                    <p style="font-size: 80%;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                    </div>
+                <div class="p1_anlyse_r_div">
+                    <img src="素材/p13.png" alt="">
+                    <p style="font-weight: bold;">没课约</p>
+                    <p style="font-size: 80%;">xxxxxxxxxxxxxxxxxxx</p>
+                </div>
+                <div class="p1_anlyse_r_roll"></div>
+                
+    
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="p2_detail">产品详情</div>
+
+    <div class="p2_nav">
+        <div class="p2_nav_div"><a href="#">即将上线</a>
+        </div><div class="p2_nav_div"><a href="#">产品换代</a></div>
+        <div class="p2_nav_div"><a href="#">全新产品</a></div>
+
+        
+
+    </div>
+
+
+    <div class="p2_content">
+            <div style="position: relative;">
+                <img src="素材/p21.png" width="280" height="200">
+                <div class="p2_crystal">距离上线还有x天</div>
+                <p>红岩</p>
+                <p id="p_font_s">xxxxxxxxxxxxxxxxxxxxxx</p>
+                <p id="p_font_s">xxxxxxxxxxx</p>
+                <p id="p_font_s">xxxxxxxxxxxxxxxx</p>
+                <div class="p2_content_konowmore"><a href="">了解详情</a></div>
+            </div>
+            <div style="position: relative;">
+                <img src="素材/p22.png" width="280" height="200">
+                <div class="p2_crystal">距离上线还有x天</div>
+                <p>重邮帮</p>
+                <p id="p_font_s">xxxxxxxxxxxxxxxxxxxxxx</p>
+                <p id="p_font_s">xxxxxxxxxxx</p>
+                <p id="p_font_s">xxxxxxxxxxxxxxxx</p>
+                <div class="p2_content_konowmore"><a href="">了解详情</a></div>
+            </div>
+    
+            <div style="position: relative;">
+                <img src="素材/p23.png" width="280" height="200">
+                <div class="p2_crystal">距离上线还有x天</div>
+                <p>掌上重邮2.0</p>
+                <p id="p_font_s">xxxxxxxxxxxxxxxxxxxxxx</p>
+                <p id="p_font_s">xxxxxxxxxxx</p>
+                <p id="p_font_s">xxxxxxxxxxxxxxxx</p>
+                <div class="p2_content_konowmore"><a href="">了解详情</a></div>
+            </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="p3_exp">用户体验区</div>
+        <div class="p3_idontknowhowtonameit">
+        <div class="p3_idontknowhowtonameit_d-l">
+            <div style="margin: 20px;">
+                <div class="p3_lable-up">掌上重邮</div>
+                <div class="p3_lable-down">2019-09</div>
+                <img src="素材/serch.png"  width="400" height="250">
+                <p>你说你有点小问题吗</p>
+                <p><small>xxxxxxxxxxxxxxxx</small></p>
+            </div>
+        </div>
+        <div class="p3_idontknowhowtonameit_d-r">
+            <div class="p3_lable-up">掌上重邮</div>
+            <div class="p3_lable-down">2019-09</div>
+            <div class="p3_idontknowhowtonameit_d-r_inner">
+                <p>你说你有点小问题吗</p>
+                <p><small>xxxxxxxxxxxxxxxx</small></p>
+            </div>
+
+
+        </div>
+        <div class="p3_idontknowhowtonameit_d-r">
+            <div class="p3_lable-up">掌上重邮</div>
+            <div class="p3_lable-down">2019-09</div>
+            <div class="p3_idontknowhowtonameit_d-r_inner">
+                <p>你说你有点小问题吗</p>
+                <p><small>xxxxxxxxxxxxxxxx</small></p>
+            </div>
+
+
+        </div>
+        <div class="p3_idontknowhowtonameit_d-r">
+            <div class="p3_lable-up">青春邮约</div>
+            <div class="p3_lable-down">2019-09</div>
+            <div class="p3_idontknowhowtonameit_d-r_inner">
+                <p>你说你有点小问题吗</p>
+                <p><small>xxxxxxxxxxxxxxxx</small></p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="bottom">
+        <div>COPYRIGHT © 红岩网校工作站</div>
+        <div>地址：重庆市南岸区崇文路2号（重庆邮电大学内） 400065</div>
+        <div>E-MAIL：REDROCK@CQUPT.EDU.CN（023-62461084）</div>
+    </div>
+
+
+    
+    
+    
+</body>
+</html>
