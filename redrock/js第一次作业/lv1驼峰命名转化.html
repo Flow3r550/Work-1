@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <script>
+
+        /*• lv1 :
+              • 写一个函数实现驼峰命名的转化
+        */
+
+
+        let str = "can-enter-volunteer-organization"
+
+        function change(str)
+        {
+                var arr = str.split("-");
+
+                    for(var i = 1; i < arr.length; i++)
+                    {
+                        arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1);
+                    }
+
+                    return arr.join("");
+    
+    
+    
+        }
+        console.log(change(str));
+        document.write(change(str))
+        
+        
+               
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
