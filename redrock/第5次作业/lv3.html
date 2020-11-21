@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lv3
+  </title>
+
+
+</head>
+<body>
+  <h1>购物清单</h1>
+  <p>必须要购买的东西</p>
+  <ul id="aaa">
+    <li>牛奶</li>
+    <li>面包</li>
+    <li>xxjj的应援牌</li>
+
+</ul>
+
+<script>
+    (function(){
+    var bbb = document.getElementById('aaa');
+    bbb.addEventListener('click',good);
+
+
+    function good(ccc){
+        var ddd = ccc.target;
+
+        console.log(ddd.nodeName,ddd.nodeName.toLowerCase());
+
+        if(ddd.nodeName == 'LI')
+        {
+            alert(ddd.innerHTML);
+        }
+    }
+})();
+(function(){
+    var colorxx = document.getElementsByTagName('li');
+    
+    for( var i = 0 ;i <= colorxx.length ; i++){
+        if(i%2 != 0){
+            colorxx[i].style.backgroundColor = 'red';
+        }
+        else{
+            colorxx[i].style.backgroundColor = 'green';
+        }
+    }
+})();
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板</title>
+
+    <style>
+        #box1{
+            height: 400px;
+            width: 800px;
+            margin: 0 auto;
+            background-color:burlywood;
+
+            border: 2px solid burlywood;
+            border-radius: 5px;
+ 
+        }
+        #content{
+            height: 350px;
+            width: 750px;
+            margin:25px auto;
+            background-color: lightgrey;
+            
+        }
+
+        #box2{
+            display: flex;
+            flex-direction: row;
+            height: 30px;
+            width: 350px;
+            margin: 20px auto;
+
+        }
+
+        #write{
+            
+            height: 20px;
+            width: 200px;
+            
+        }
+        #sub{
+            
+            height: 26.5px;
+            width: 50px;
+
+        }
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div id="box">
+        <div id="content"> </div>
+    </div>
+
+
+
+    <div id="box2">
+        <div id="div1">
+            <input type="text" id="write" placeholder="请输入留言">
+        </div>
+        <div id="div2">
+            <input type="button" id="sub" value="提交" onclick="putit()">
+        </div>
+
+    </div>
+
+    <script>
+        var mes = document.getElementById("content");
+        var write = document.getElementById("write");
+        
+        function putit(){
+            
+                var putput = document.createElement("div");
+                putput.className ="goodgood";
+                putput.innerHTML = write.value;
+
+                write.value = "";
+                content.appendChild(putput);
+            
+        }
+    
+    </script>
+
+
+    
+
+
+    
+
+
+    
+</body>
+</html>

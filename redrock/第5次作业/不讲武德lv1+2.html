@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>耗子煨汁</title>
+    <style>
+      span {
+        background-color: black;
+      }
+    </style>
+
+    <script>
+      var Span = document.getElementsByTagName("span") , n = 0 , m = 0,q = 0;
+
+
+      function changeColor(){
+        n++;
+
+        if(n%2 != 0)
+        {
+          for(i = 0 ;i <=Span.length;i++)
+          {
+              Span[i].style.backgroundColor = "white";
+          }
+        }
+
+        
+        else
+        {
+          for(i = 0 ;i <=Span.length;i++)
+          {
+              Span[i].style.backgroundColor = "black";
+          }
+        }
+
+
+ 
+      }
+
+
+
+      function changeBackgroundcolor(){
+        q++;
+        if(q%2 == 1){
+          document.getElementById("maBaoGuo").style.backgroundColor = "lightyellow";
+
+        }
+        else{
+          document.getElementById("maBaoGuo").style.backgroundColor = "white";
+        }
+        
+      }
+
+
+      function fontsize(){
+        m++;
+
+        if(m%3 == 1){
+          document.getElementById("maBaoGuo").style.fontSize = '75%';
+          document.getElementById("maBaoGuo").style.fontWeight = 'light'
+        }
+        if(m%3 == 2){
+          document.getElementById("maBaoGuo").style.fontSize = '100%';
+        }
+        if(m%3 == 0){
+          document.getElementById("maBaoGuo").style.fontSize = '125%';
+          document.getElementById("maBaoGuo").style.fontWeight = 'bold';
+        }
+      }
+
+    </script>
+</head>
+<body>
+  <div id="maBaoGuo">
+    <p>刚才有个朋友问我：<span>英</span>老师，发生甚么事了？</p>
+    <p>给我发来两张截图，</p>
+    <p>我一看！噢，原来是昨晚有个年轻人，<span>5nm</span>的，说能不能教教我<span>挤牙膏大法</span>。</p>
+    <p>我说可以，我说你用<span>Arm</span>的死劲不好用，他不服气。</p>
+    <p>我说小朋友你<span>两个核贵不过我一个核</span>，他说你这也没用，我说我这个有用。</p>
+    <p>这是化劲，传统<span>摩尔定律</span>是讲化劲的，四两八千金，200多核的<span>英国大伟达</span>都干不过我一个核。</p>
+    <p>他说要和我试试，我说可以。</p>
+    <p>我一说，他啪就做出来了，很快啊。</p>
+    <p>然后上来就是一个<span>4x CPU</span>，一个<span>6x GPU</span>，一个<span>15x ML</span>！</p>
+    <p>我全部防出去了，防出去以后自然是传统<span>挤牙膏</span>宜点到为止，右拳指着<span>软件兼容</span>，没打他。</p>
+    <p>因为这时间按传统他已经输了，他也承认我先打到他要害。我收拳的时间不打了，他突然袭击<span>“不涨价”</span>来打我脸。</p>
+    <p>我大E了啊，没有闪。</p>
+    <p>两分多钟以后，当时流眼泪了，捂着眼我就停停。</p>
+    <p>我说小<span>Apple</span>你不讲<span>摩尔定律</span>。他忙说对不起，不懂规矩啊，他说他是乱打的。</p>
+    <p>他可不是乱打的，<span>CPU GPU</span>训练有素，后来他说在<span>手机</span>上练过十几年<span>芯片</span>，看来是有备而来。</p>
+    <p>这个<span>Apple</span>，不讲武德。来，骗！来，偷袭！我这个<span>14nm+++</span>的老同志。</p>
+    <p>这好吗？这不好。我劝这个<span>Apple</span>，耗子尾汁，好好反思，以后不要再犯这样的聪明，小聪明。</p>
+    <p><span>IT界</span>要以核为贵，要讲<span>摩尔定律</span>，不要搞窝里斗！</p>
+    <p>谢谢朋友们！</p>
+
+    <input type="button" value="显示隐藏" onclick="changeColor()">
+    <input type="button" value="背景颜色" onclick="changeBackgroundcolor()">
+    <input type="button" value="字体大小" onclick="fontsize()">
+  </div>
+
+
+</body>
+</html>
